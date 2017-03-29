@@ -567,6 +567,56 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.simplexpbeacon"
         ]
+    },
+    {
+        "id": "com.unarin.cordova.beacon.underscorejs",
+        "file": "plugins/com.unarin.cordova.beacon/www/lib/underscore-min-1.6.js",
+        "pluginId": "com.unarin.cordova.beacon",
+        "runs": true
+    },
+    {
+        "id": "com.unarin.cordova.beacon.Q",
+        "file": "plugins/com.unarin.cordova.beacon/www/lib/q.min.js",
+        "pluginId": "com.unarin.cordova.beacon",
+        "runs": true
+    },
+    {
+        "id": "com.unarin.cordova.beacon.LocationManager",
+        "file": "plugins/com.unarin.cordova.beacon/www/LocationManager.js",
+        "pluginId": "com.unarin.cordova.beacon",
+        "merges": [
+            "cordova.plugins"
+        ]
+    },
+    {
+        "id": "com.unarin.cordova.beacon.Delegate",
+        "file": "plugins/com.unarin.cordova.beacon/www/Delegate.js",
+        "pluginId": "com.unarin.cordova.beacon",
+        "runs": true
+    },
+    {
+        "id": "com.unarin.cordova.beacon.Region",
+        "file": "plugins/com.unarin.cordova.beacon/www/model/Region.js",
+        "pluginId": "com.unarin.cordova.beacon",
+        "runs": true
+    },
+    {
+        "id": "com.unarin.cordova.beacon.Regions",
+        "file": "plugins/com.unarin.cordova.beacon/www/Regions.js",
+        "pluginId": "com.unarin.cordova.beacon",
+        "runs": true
+    },
+    {
+        "id": "com.unarin.cordova.beacon.CircularRegion",
+        "file": "plugins/com.unarin.cordova.beacon/www/model/CircularRegion.js",
+        "pluginId": "com.unarin.cordova.beacon",
+        "runs": true
+    },
+    {
+        "id": "com.unarin.cordova.beacon.BeaconRegion",
+        "file": "plugins/com.unarin.cordova.beacon/www/model/BeaconRegion.js",
+        "pluginId": "com.unarin.cordova.beacon",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -593,7 +643,8 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.4",
     "cordova-plugin-whitelist": "1.2.2",
-    "cordova-plugin-beacon": "1.1.0"
+    "cordova-plugin-beacon": "1.1.0",
+    "com.unarin.cordova.beacon": "3.4.1"
 };
 // BOTTOM OF METADATA
 });
