@@ -1,5 +1,5 @@
-var DataAccess = {
-    GetPatientDataFromBeacon : function(beaconid){
+var dataAccess = {
+    getPatientDataFromBeacon : function(beaconid){
         var bed_id = 0;
         var patient;
         $.each(beacons,function(i,a){
