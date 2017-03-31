@@ -561,14 +561,6 @@ module.exports = [
         ]
     },
     {
-        "id": "cordova-plugin-beacon.client",
-        "file": "plugins/cordova-plugin-beacon/www/client.js",
-        "pluginId": "cordova-plugin-beacon",
-        "clobbers": [
-            "cordova.plugins.simplexpbeacon"
-        ]
-    },
-    {
         "id": "com.unarin.cordova.beacon.underscorejs",
         "file": "plugins/com.unarin.cordova.beacon/www/lib/underscore-min-1.6.js",
         "pluginId": "com.unarin.cordova.beacon",
@@ -617,6 +609,14 @@ module.exports = [
         "file": "plugins/com.unarin.cordova.beacon/www/model/BeaconRegion.js",
         "pluginId": "com.unarin.cordova.beacon",
         "runs": true
+    },
+    {
+        "id": "cordova-plugin-beacon.client",
+        "file": "plugins/cordova-plugin-beacon/www/client.js",
+        "pluginId": "cordova-plugin-beacon",
+        "clobbers": [
+            "cordova.plugins.simplexpbeacon"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -643,8 +643,8 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.4",
     "cordova-plugin-whitelist": "1.2.2",
-    "cordova-plugin-beacon": "1.1.0",
-    "com.unarin.cordova.beacon": "3.4.1"
+    "com.unarin.cordova.beacon": "3.4.1",
+    "cordova-plugin-beacon": "1.1.0"
 };
 // BOTTOM OF METADATA
 });

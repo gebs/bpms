@@ -54,11 +54,11 @@
 		DC30C5FC6EDD4CDF92146E45 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2180245910374BC1BE4E942A /* CDVViewController+SplashScreen.m */; };
 		63DFF941BA4048B2936A4EB6 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D34F773A5D6E4C9080EA3808 /* CDVStatusBar.m */; };
 		CA50384850F34D91BC2BE3F4 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = D20782A582D54C4CBDC05AC9 /* CDVVibration.m */; };
-		2586D92EF9944DCF9474C061 /* SimpleXpBeaconPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B98C51F17A354C7997D66126 /* SimpleXpBeaconPlugin.m */; };
 		E2BCEA3A364A416B837D7D0A /* CDVLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F497A4B6704FB9B5C356B0 /* CDVLocationManager.m */; };
 		CD672D94D08940A9890A09D9 /* AppDelegate+CDVLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D46B2E0FD24829A6FAA32F /* AppDelegate+CDVLocationManager.m */; };
 		B56A71C4A5B14681A88F8654 /* LMLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B8C5920E4A4BE58DD5661F /* LMLogger.m */; };
 		ADB6C86D0A6D46DFBD5664D0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66AC1AE069E94CE0A3CED8A8 /* CoreBluetooth.framework */; };
+		AA636D0FD8A144749B158D01 /* SimpleXpBeaconPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 592B352E449E4CE29CE26542 /* SimpleXpBeaconPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,8 +164,6 @@
 		C3DA54A4A9AF448D88961505 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		D20782A582D54C4CBDC05AC9 /* CDVVibration.m */ = {isa = PBXFileReference; name = "CDVVibration.m"; path = "cordova-plugin-vibration/CDVVibration.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		0E424238BAC04BD28804FEB6 /* CDVVibration.h */ = {isa = PBXFileReference; name = "CDVVibration.h"; path = "cordova-plugin-vibration/CDVVibration.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		B98C51F17A354C7997D66126 /* SimpleXpBeaconPlugin.m */ = {isa = PBXFileReference; name = "SimpleXpBeaconPlugin.m"; path = "cordova-plugin-beacon/SimpleXpBeaconPlugin/SimpleXpBeaconPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		B091D431A72441B088A39A32 /* SimpleXpBeaconPlugin.h */ = {isa = PBXFileReference; name = "SimpleXpBeaconPlugin.h"; path = "cordova-plugin-beacon/SimpleXpBeaconPlugin/SimpleXpBeaconPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		D4F497A4B6704FB9B5C356B0 /* CDVLocationManager.m */ = {isa = PBXFileReference; name = "CDVLocationManager.m"; path = "com.unarin.cordova.beacon/CDVLocationManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		40D46B2E0FD24829A6FAA32F /* AppDelegate+CDVLocationManager.m */ = {isa = PBXFileReference; name = "AppDelegate+CDVLocationManager.m"; path = "com.unarin.cordova.beacon/AppDelegate+CDVLocationManager.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		68B8C5920E4A4BE58DD5661F /* LMLogger.m */ = {isa = PBXFileReference; name = "LMLogger.m"; path = "com.unarin.cordova.beacon/LMLogger.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
@@ -173,6 +171,8 @@
 		9D7D9CD656164CEFA4FDE926 /* AppDelegate+CDVLocationManager.h */ = {isa = PBXFileReference; name = "AppDelegate+CDVLocationManager.h"; path = "com.unarin.cordova.beacon/AppDelegate+CDVLocationManager.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		B43BD48BE19845E7B93F09A0 /* LMLogger.h */ = {isa = PBXFileReference; name = "LMLogger.h"; path = "com.unarin.cordova.beacon/LMLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		66AC1AE069E94CE0A3CED8A8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; name = "CoreBluetooth.framework"; path = "System/Library/Frameworks/CoreBluetooth.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		592B352E449E4CE29CE26542 /* SimpleXpBeaconPlugin.m */ = {isa = PBXFileReference; name = "SimpleXpBeaconPlugin.m"; path = "cordova-plugin-beacon/SimpleXpBeaconPlugin/SimpleXpBeaconPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0B94C32AEC2D41CA8ACC018F /* SimpleXpBeaconPlugin.h */ = {isa = PBXFileReference; name = "SimpleXpBeaconPlugin.h"; path = "cordova-plugin-beacon/SimpleXpBeaconPlugin/SimpleXpBeaconPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,14 +353,14 @@
 				C3DA54A4A9AF448D88961505 /* CDVStatusBar.h */,
 				D20782A582D54C4CBDC05AC9 /* CDVVibration.m */,
 				0E424238BAC04BD28804FEB6 /* CDVVibration.h */,
-				B98C51F17A354C7997D66126 /* SimpleXpBeaconPlugin.m */,
-				B091D431A72441B088A39A32 /* SimpleXpBeaconPlugin.h */,
 				D4F497A4B6704FB9B5C356B0 /* CDVLocationManager.m */,
 				40D46B2E0FD24829A6FAA32F /* AppDelegate+CDVLocationManager.m */,
 				68B8C5920E4A4BE58DD5661F /* LMLogger.m */,
 				DDA15F0DD84D49488843874D /* CDVLocationManager.h */,
 				9D7D9CD656164CEFA4FDE926 /* AppDelegate+CDVLocationManager.h */,
 				B43BD48BE19845E7B93F09A0 /* LMLogger.h */,
+				592B352E449E4CE29CE26542 /* SimpleXpBeaconPlugin.m */,
+				0B94C32AEC2D41CA8ACC018F /* SimpleXpBeaconPlugin.h */,
 			);
 			name = Plugins;
 			path = "BPMS/Plugins";
@@ -501,10 +501,10 @@
 				DC30C5FC6EDD4CDF92146E45 /* CDVViewController+SplashScreen.m in Sources */,
 				63DFF941BA4048B2936A4EB6 /* CDVStatusBar.m in Sources */,
 				CA50384850F34D91BC2BE3F4 /* CDVVibration.m in Sources */,
-				2586D92EF9944DCF9474C061 /* SimpleXpBeaconPlugin.m in Sources */,
 				E2BCEA3A364A416B837D7D0A /* CDVLocationManager.m in Sources */,
 				CD672D94D08940A9890A09D9 /* AppDelegate+CDVLocationManager.m in Sources */,
 				B56A71C4A5B14681A88F8654 /* LMLogger.m in Sources */,
+				AA636D0FD8A144749B158D01 /* SimpleXpBeaconPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

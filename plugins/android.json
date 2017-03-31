@@ -64,10 +64,10 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         },
-        "cordova-plugin-beacon": {
+        "com.unarin.cordova.beacon": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         },
-        "com.unarin.cordova.beacon": {
+        "cordova-plugin-beacon": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         }
     },

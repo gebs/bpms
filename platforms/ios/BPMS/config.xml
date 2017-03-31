@@ -135,10 +135,10 @@
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="android-minSdkVersion" value="14" />
-    <feature name="cordova-plugin-beacon">
-        <param name="ios-package" value="SimpleXpBeaconPlugin" />
-    </feature>
     <feature name="LocationManager">
         <param name="ios-package" value="CDVLocationManager" />
+    </feature>
+    <feature name="cordova-plugin-beacon">
+        <param name="ios-package" value="SimpleXpBeaconPlugin" />
     </feature>
 </widget>
