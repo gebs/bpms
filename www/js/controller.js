@@ -7,17 +7,25 @@ function init(){
 
 function fillPatientInfo(patient){
     clearPatientInfo();
-    $("#paddress").val(patient.address);
-    $("#pzipcity").val(patient.zip + ' ' +patient.city);
-    $("#chief_complaint").val(patient.chief_complaint);
-    $("#history_of_currentIllness").val(patient.history_of_present_illness);
+    $("#paddress").html(patient.address);
+    $("#pzipcity").html(patient.zip + ' ' +patient.city);
+    $("#chief_complaint").html(patient.chief_complaint);
+    $("#booldType").html("<b>BloodType:</b>" + patient.blood_type);
+     $.each(patient.allergies,function(i,a){
+        $("#allergies").append("<li>" + a+ "</li>");
+    });
+    
+    $("#history_of_currentIllness").html(patient.history_of_present_illness);
     $.each(patient.mediacal_history,function(i,a){
         $("#mediacal_history").append("<li>" + a+ "</li>");
     });
     $.each(patient.surgical_history,function(i,a){
         $("#surgical_history").append("<li>" + a+ "</li>");
     });
-    $("#social_history").val(patient.social_history);
+    $("#social_history").html(patient.social_history);
+    $.each(patient.appointments,function(i,a){
+        $("#appointments").append("<li>" + a.date + "&#9; " +a.appointment +"</li>");
+    });
 }
 
 function clearPatientInfo(){
@@ -27,5 +35,8 @@ function clearPatientInfo(){
     $("#history_of_currentIllness").empty();
     $("#mediacal_history").empty();
     $("#surgical_history").empty();
-    $("#social_history").empty();
+    $("#booldType").empty();
+    $("#allergies").empty();
+    $("#appointments").empty();
+    
 }
