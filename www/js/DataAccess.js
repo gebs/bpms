@@ -3,7 +3,7 @@ var dataAccess = {
         var bed_id = 0;
         var patient;
         $.each(beacons,function(i,a){
-           if (a.minor == beaconid){
+           if (a.identifier == beaconid){
                bed_id = a.bed_id;
            }
         });
