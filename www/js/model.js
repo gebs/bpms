@@ -5,9 +5,17 @@ var beacons = [
         id:1,
         bed_id:1,
         uuid: "20CAE8A0-A9CF-11E3-A5E2-0800200C9A66",
-        identifier: "Beacon 06",
+        identifier: "BED1",
         major: "213",
         minor: "2548"
+    },
+     {
+        id:2,
+        bed_id:2,
+        uuid: "20CAE8A0-A9CF-11E3-A5E2-0800200C9A66",
+        identifier: "BED2",
+        major: "213",
+        minor: "2547"
     }
 ]
 

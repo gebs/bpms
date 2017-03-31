@@ -25,6 +25,7 @@ function startMonitoringBeacons(){
 
 function onEnterRegion(pluginResult) {
     var patient = dataAccess.getPatientDataFromBeacon(pluginResult.region.identifier);
+    fillPatientInfo(patient);
 }
 function onExitRegion(pluginResult){
     
