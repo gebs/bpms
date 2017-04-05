@@ -4,18 +4,27 @@ var beacons = [
     {
         id:1,
         bed_id:1,
-        uuid: "20CAE8A0-A9CF-11E3-A5E2-0800200C9A66",
+        uuid: "f7826da6-4fa2-4e98-8024-bc5b71e0893e",
         identifier: "BED1",
-        major: "213",
-        minor: "2548"
-    },
-     {
+        major: "56170",
+        minor: "36053",
+        alias: "300W"
+    },{
         id:2,
         bed_id:2,
-        uuid: "20CAE8A0-A9CF-11E3-A5E2-0800200C9A66",
-        identifier: "BED2",
-        major: "213",
-        minor: "2547"
+        uuid: "f7826da6-4fa2-4e98-8024-bc5b71e0893e",
+        identifier: "BED1",
+        major: "21373",
+        minor: "54596",
+        alias: "8ZA3"
+    },{
+        id:3,
+        bed_id:3,
+        uuid: "f7826da6-4fa2-4e98-8024-bc5b71e0893e",
+        identifier: "BED1",
+        major: "23036",
+        minor: "42799",
+        alias: "VdoM"
     }
 ]
 
