@@ -10,3 +10,9 @@
 /// <reference path="../.vscode/typings/cordova/plugins/Vibration.d.ts"/>
 /// <reference path="../.vscode/typings/cordova/plugins/DeviceMotion.d.ts"/>
 /// <reference path="../.vscode/typings/cordova/plugins/Device.d.ts"/>
+/// <reference path="../.vscode/typings/cordova/plugins/Camera.d.ts"/>
+/// <reference path="../.vscode/typings/cordova/plugins/MediaCapture.d.ts"/>
+/// <reference path="../.vscode/typings/cordova/plugins/Contacts.d.ts"/>
+/// <reference path="../.vscode/typings/cordova/plugins/FileTransfer.d.ts"/>
+/// <reference path="../.vscode/typings/cordova/plugins/Media.d.ts"/>
+/// <reference path="../.vscode/typings/cordova/plugins/NetworkInformation.d.ts"/>

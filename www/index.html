@@ -39,19 +39,21 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css">
-		<link rel="stylesheet" type="text/css" href="js/jquery-1.5.0.mobile.min.css">
-		<style>
-		/* For avoiding title truncation in wp8 */
-		.ui-header .ui-title {
-				overflow: visible !important;
-		}
-		/* For fixing the absolute position issue for the default cordova gen page*/
-		#cjp-accordion1 .app {
-				left: 5px !important;
-				margin: 5px !important;
-				position: relative !important;
-		}
-		</style>
+    <link rel="stylesheet" type="text/css" href="js/jquery-1.5.0.mobile.min.css">
+    <style>
+        /* For avoiding title truncation in wp8 */
+        
+        .ui-header .ui-title {
+            overflow: visible !important;
+        }
+        /* For fixing the absolute position issue for the default cordova gen page*/
+        
+        #cjp-accordion1 .app {
+            left: 5px !important;
+            margin: 5px !important;
+            position: relative !important;
+        }
+    </style>
     <title>Hello World</title>
 </head>
 
@@ -72,65 +74,109 @@
         </footer>
 
     </section>
-     <section data-role="page" id="page-patient" data-title="PatientInfo">
+    <section data-role="page" id="page-patient" data-title="PatientInfo">
         <header data-role="header">
 
-            <h1 id="patientName"><b>Franz Ferdiand</b></h1>
+            <h1 id="patientName"><b></b></h1>
 
-        </header><!-- /header -->
+        </header>
+        <!-- /header -->
         <article class="ui-content">
             <div>
-            <h4 class="ui-bar ui-bar-a">Personal infos</h4>
-            <div class="ui-body">
-            <div id="paddress">Musterstrasse 22TESTETETSD</div>
-            <div id="pzipcity">6000 Luzern</div>
-            <div id="booldType"></div>
-            <div><b>Allergies:</b></div>
-            <div id="allergies"></div>
-            </div>
+                <h4 class="ui-bar ui-bar-a">Personal infos</h4>
+                <div class="ui-body">
+                    <div id="paddress"></div>
+                    <div id="pzipcity"></div>
+                    <div id="booldType"></div>
+                    <div><b>Allergies:</b></div>
+                    <div id="allergies"></div>
+                </div>
             </div>
             <div id="chief_complaint_se">
                 <h4 class="ui-bar ui-bar-a">Chief Complaint</h4>
-                <div class="ui-body" id="chief_complaint">swelling of tongue and difficulty breathing and swallowing</div>
+                <div class="ui-body" id="chief_complaint"></div>
             </div>
             <div id="history_of_currentIllness_sec">
                 <h4 class="ui-bar ui-bar-a">History of current illness</h4>
-                <div class="ui-body" id="history_of_currentIllness">77 y o woman in NAD with a h/o CAD, DM2, asthma and HTN on altace for 8 years awoke from sleep around 2:30 am this morning of a sore throat and swelling of tongue.She came immediately to the ED b/c she was having difficulty swallowing and some trouble breathing due to obstruction caused by the swelling. She has never had a similar reaction ever before and she did not have any associated SOB, chest pain, itching, or nausea. She has not noticed any rashes, and has been afebrile. She says that she feels like it is swollen down in her esophagus as well. In the ED she was given 25mg benadryl IV, 125 mg solumedrol IV and pepcid 20 mg IV. This has helped the swelling some but her throat still hurts and it hurts to swallow. Nothing else was able to relieve the pain and nothing make it worse though she has not tried to drink any fluids because of trouble swallowing. She denies any recent travel, recent exposure to unusual plants or animals or other allergens. She has not started any new medications, has not used any new lotions or perfumes and has not eaten any unusual foods. Patient has not taken any of her oral medications today.</div>
+                <div class="ui-body" id="history_of_currentIllness"></div>
             </div>
             <div id="mediacal_history_sec">
                 <h4 class="ui-bar ui-bar-a">Medical History</h4>
                 <div class="ui-body" id="mediacal_history">
-                    <li>CAD w/ Left heart cath in 2005 showing 40% LAD, 50% small D2, 40% RCA and 30% large OM; 2006 TTE showing LVEF 60-65% with diastolic dysfunction, LVH, mild LAdilation</li>
-                    <li>Hyperlipidemia</li>
-                    <li>HTN</li>
+                   
                 </div>
+                <div>
+                    <table style='display:none' id="medhistAdd">
+                        <tr>
+                            <td style='width:100%'><input type='text' class="medhist" placeholder="Medical History" /></td>
+                            <td><button class='btn'>+</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ui-body"></div><button class="btn" id="btnAddMedHistory">+ Add Medical History</button></div>
             </div>
             <div id="surgical_history_sec">
                 <h4 class="ui-bar ui-bar-a">Surgical History</h4>
                 <div class="ui-body" id="surgical_history">
-                    <li>s/p vaginal wall operation for prolapse 2006</li>
-                    <li>s/p Cardiac stent in 1999</li>
-                    <li>s/p hystarectomy in 1970s </li>
+                 
                 </div>
+                <div>
+                    <table style='display:none' id="surgAdd">
+                        <tr>
+                            <td style='width:100%'><input type='text' class="surg" placeholder="surgery" /></td>
+                            <td><button class='btn'>+</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ui-body"></div><button class="btn" id="btnAddSurgery">+ Add Surgery</button></div>
             </div>
             <div id="social_history_se">
                 <h4 class="ui-bar ui-bar-a">Social History</h4>
-                <div class="ui-body" id="social_history">atient lives in _______ with daughter _____ (919) _______. Patient does all ADLs and IADLs with no/little assistance. She does own finances and drives. Patient has 4 daughters that all live in the area. Patient does not use tobacco, alcohol, illicit drugs. </div>
+                <div class="ui-body" id="social_history"></div>
             </div>
             <div id="treatment_plan_sec">
                 <h4 class="ui-bar ui-bar-a">Treatment Plan</h4>
                 <div class="ui-body" id="treatment_plan"></div>
+                <div>
+                    <table style='display:none' id="treatAdd">
+                        <tr>
+                            <td style='width:100%'><input type='text' class="treatment" placeholder="Treatment" /></td>
+                            <td><button class='btn'>+</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ui-body"></div><button class="btn" id="btnAddTreatmentPlan">+ Add Treatment</button></div>
             </div>
             <div id="medicine_sec">
                 <h4 class="ui-bar ui-bar-a">Medicine</h4>
                 <div class="ui-body" id="medicine"></div>
+                <div>
+                    <table style='display:none' id="medAdd">
+                        <tr>
+                            <td style='width:100%'><input type='text' class="medicine" placeholder="Medicine" /></td>
+                            <td><button class='btn'>+</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ui-body"></div><button class="btn" id="btnAddMedicine">+ Add Medicine</button></div>
             </div>
             <div id="appointments_sec">
                 <div class="ui-bar ui-bar-a">
                     <h4>Appointments</h4>
                 </div>
                 <div class="ui-body" id="appointments"></div>
+                <div>
+                    <table style='display:none' id="appAdd">
+                        <tr>
+                            <td style='width:50%'><input type='text' class="date" placeholder="Date" /></td>
+                            <td style='width:50%'><input type='text' class="appointment" placeholder="Appointment" /></td>
+                            <td><button class='btn'>+</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div><button class="btn" id="btnAddAppointment">+ Add Appointment</button></div>
             </div>
+
         </article>
         <footer data-role="footer" data-position="fixed">
 
@@ -139,23 +185,24 @@
         </footer>
 
     </section>
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script>
+    <script type="text/javascript" id="jqm-trans-disable">
+        /* For having a faster transition */
+        $(document).on("mobileinit", function () {
+            $.mobile.defaultPageTransition = "none";
+            $.mobile.defaultDialogTransition = "none";
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/model.js"></script>
     <script type="text/javascript" src="js/DataAccess.js"></script>
     <script type="text/javascript" src="js/controller.js"></script>
     <script type="text/javascript" src="js/beaconHandler.js"></script>
-    
-    
-    <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script>
-		<script type="text/javascript" id="jqm-trans-disable">
-		/* For having a faster transition */
-		$(document).on("mobileinit", function() {
-				$.mobile.defaultPageTransition = "none";
-				$.mobile.defaultDialogTransition = "none";
-		});
-		</script>
-        <script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>

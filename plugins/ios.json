@@ -48,7 +48,32 @@
         },
         "cordova-plugin-beacon": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        }
+    }
 }

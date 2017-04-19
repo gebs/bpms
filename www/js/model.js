@@ -32,8 +32,8 @@ var patients = [
     {
         id:1,
         bed_id:1,
-        firstname: "patient1",
-        lastname: "pat",
+        firstname: "Paul",
+        lastname: "Weidinger",
         address: "Musterstrasse 1",
         zip: 6000,
         city: "Luzern",
@@ -75,14 +75,17 @@ var patients = [
                 date:"20.12.2016",
                 appointment:"surgery"
             }
+        ],
+        treatments:[
+            "Test Treatment 1"
         ]
 
     },
     {
         id:2,
         bed_id:2,
-        firstname: "patient2",
-        lastname: "pat",
+        firstname: "Klaus",
+        lastname: "Kleber",
         address: "Musterstrasse 2",
         zip: 6000,
         city: "Luzern",
@@ -123,14 +126,17 @@ var patients = [
                 date:"20.12.2016",
                 appointment:"surgery"
             }
+        ],
+        treatments:[
+            "Test Treatment 1"
         ]
 
     },
     {
         id:3,
         bed_id:3,
-        firstname: "patient3",
-        lastname: "pat",
+        firstname: "John",
+        lastname: "Snow",
         address: "Musterstrasse 3",
         zip: 6000,
         city: "Luzern",
@@ -162,6 +168,9 @@ var patients = [
                 date:"20.12.2016",
                 appointment:"surgery"
             }
+        ],
+        treatments:[
+            "Test Treatment 1"
         ]
 
     }
