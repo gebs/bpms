@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-battery-status": {
-            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
-        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         },
@@ -37,9 +34,6 @@
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         },
-        "cordova-plugin-vibration": {
-            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         },
@@ -47,6 +41,9 @@
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         },
         "cordova-plugin-beacon": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
+        "cordova-plugin-battery-status": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         },
         "cordova-plugin-camera": {
@@ -64,7 +61,13 @@
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
         "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
+        },
+        "cordova-plugin-vibration": {
             "PACKAGE_NAME": "ch.hslu.mobsys.bpms"
         }
     },
