@@ -1,12 +1,7 @@
 document.addEventListener("deviceready",init,false);
 function init(){
     console.log("DOM ready");
-    startMonitoringBeacons();
-    setTimeout(function(){
-fillPatientInfo(patients[0]);
-
-},5000); 
-    
+    startMonitoringBeacons();    
 }
 
 function fillPatientInfo(patient){
@@ -14,6 +9,7 @@ function fillPatientInfo(patient){
     $(':mobile-pagecontainer').pagecontainer('change', '#page-patient', {transition: 'slideup'});
 
     clearPatientInfo();
+    $("#patientName").html(patient.firstname + " " + patient.lastname);
     $("#paddress").html(patient.address);
     $("#pzipcity").html(patient.zip + ' ' +patient.city);
     $("#chief_complaint").html(patient.chief_complaint);
@@ -36,6 +32,7 @@ function fillPatientInfo(patient){
 }
 
 function clearPatientInfo(){
+    $("#patientName").empty();
     $("#paddress").empty();
     $("#pzipcity").empty();
     $("#chief_complaint").empty();

@@ -24,9 +24,13 @@ function startMonitoringBeacons(){
 
 
 function onEnterRegion(pluginResult) {
-    var patient = dataAccess.getPatientDataFromBeacon(pluginResult.region.identifier);
-    fillPatientInfo(patient);
+     console.log("Enter Beacon Region: "+ pluginResult.region.identifier);
+   var patient = dataAccess.getPatientDataFromBeacon(pluginResult.region.identifier);
+    if (patient != null){
+        fillPatientInfo(patient);
+    }
 }
 function onExitRegion(pluginResult){
-    
+    console.log("Exit Beacon Region: "+ pluginResult.region.identifier);
+    $(':mobile-pagecontainer').pagecontainer('change', '#page-index', {transition: 'slidedown'});
 }
